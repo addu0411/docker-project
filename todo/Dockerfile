@@ -12,8 +12,7 @@ COPY todo6.zip /var/www/html/todo6.zip
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
-RUN unzip endgame-master.zip
-RUN mv endgame-master/* .
+RUN unzip todo6.zip
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
