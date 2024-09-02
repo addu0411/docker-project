@@ -10,4 +10,5 @@ WORKDIR /var/www/html/
 
 sudo mv puppy/* .
 
-E
+EXPOSE 80
+CMD ["apachectl", "-D" ,"FOREGROUND"]
