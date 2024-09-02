@@ -1,4 +1,3 @@
-
 FROM ubuntu:latest
 LABEL ubuntu="latest"
 RUN apt install nginx -y
