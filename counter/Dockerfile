@@ -15,4 +15,4 @@ WORKDIR /var/www/html
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
-CMD ["nginx", "-f" ,"deamon -"]
+CMD ["nginx", "-f" ,"deamon -off"]
