@@ -1,2 +1,2 @@
 FROM ubuntu:latest
-LABEL Purposre="value"
+LABEL Purposre="exm"
