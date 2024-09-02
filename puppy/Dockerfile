@@ -1,3 +1,4 @@
 FROM ubuntu
 LABEL tag="puppy"
-RUN apt install 
+RUN apt update
+RUN apt 
