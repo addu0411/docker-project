@@ -16,4 +16,4 @@ RUN unzip counter.zip
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
-CMD ["nginx", "-g" ,"daemon off;"]
+CMD ["apachectl", "-D" ,"FOREGROUND"]
