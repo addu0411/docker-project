@@ -12,7 +12,7 @@ COPY counter /var/www/html/counter.html
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment locationx
-RUN unzip counter.zip
+
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
