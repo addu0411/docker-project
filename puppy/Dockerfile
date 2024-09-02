@@ -1,4 +1,4 @@
 FROM ubuntu
 LABEL tag="puppy"
-RUN apt update
-RUN apt 
+RUN apt update -y
+RUN apt upgrade -y
