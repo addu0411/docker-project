@@ -12,8 +12,7 @@ COPY traffic_light.zip /var/www/html/traffic_light.zip
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
-RUN unzip traffic_light.zip
-RUN 
+RUN unzip traffic_light.zip  
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
