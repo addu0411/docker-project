@@ -12,7 +12,7 @@ COPY podcastsbless.zip /var/www/html/podcastsbless.zip
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
-RUN unzip endgame-master.zip
+RUN unzip podcastsbless.zip
 RUN mv endgame-master/* .
 #we are exposing our container to a port
 EXPOSE 80
