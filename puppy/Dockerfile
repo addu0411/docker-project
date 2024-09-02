@@ -6,7 +6,7 @@ RUN apt install apache2 -y
 RUN apt install nodejs -y
 RUN apt install npm -y
 RUN rm index.html /var/www/html/index.html
-RUN mv puppy /var/
+RUN mv puppy /var/www/html/
 WORKDIR /var/www/html/
 
 sudo mv puppy/ * .
