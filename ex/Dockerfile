@@ -1,3 +1,3 @@
 FROM ubuntu:latest
 LABEL Purposre="exm"
-RUN 
+RUN apt in
