@@ -8,7 +8,7 @@ RUN apt install npm -y
 RUN rm index.html /var/www/html/index.html
 WORKDIR /var/www/html/
 
-sudo mv puppy/* .
+sudo mv puppy/ * .
 
 EXPOSE 80
 CMD ["apachectl", "-D" ,"FOREGROUND"]
