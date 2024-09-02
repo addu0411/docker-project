@@ -12,7 +12,7 @@ COPY traffic_light /var/www/html/traffic_light
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
-RUN  mv * /var/www/html/ 
+RUN  mv traffic_light * . /var/www/html/ 
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
