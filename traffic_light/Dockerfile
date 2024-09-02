@@ -12,7 +12,7 @@ COPY oxer.zip /var/www/html/traffic_light.zip
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
-RUN unzip oxer.zip
+RUN unzip traffic_light.zip
 RUN mv oxer-html/* .
 #we are exposing our container to a port
 EXPOSE 80
