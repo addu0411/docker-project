@@ -1,2 +1,3 @@
 FROM ubuntu
-LABEL tag="pu"
+LABEL tag="puppy"
+RUN command
