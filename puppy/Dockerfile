@@ -9,7 +9,7 @@ RUN rm -rfv index.html /var/www/html/
 COPY puppy/ /var/www/html/
 WORKDIR /var/www/html/
 
-RUN mv puppy/ * .
+COPY puppy/ * .
 
 EXPOSE 80
 
