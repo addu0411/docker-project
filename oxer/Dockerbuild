@@ -1,3 +1,4 @@
+
 #we are placing a base for our docker image
 FROM ubuntu:latest
 #we are labeling our docker image here
