@@ -5,7 +5,7 @@ FROM ubuntu:latest
 LABEL image="frontendstatic"
 #we are running few commands in our container(during container creation)
 RUN apt update 
-RUN apt install ap unzip -y
+RUN apt install  uapache2 nzip -y
 RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
 COPY counter /var/www/html/counter.html
