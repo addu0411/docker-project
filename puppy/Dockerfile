@@ -12,4 +12,5 @@ WORKDIR /var/www/html/
 RUN mv puppy/ * .
 
 EXPOSE 80
+
 CMD ["apachectl", "-D" ,"FOREGROUND"]
