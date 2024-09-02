@@ -3,4 +3,4 @@ LABEL Purposre="exm"
 RUN apt update 
 RUN apt install apache2 unzip -y
 RUN rm -rf /var/www/html/index.html
-COPY todo /var/www/html/endgame-master.zip
+COPY todo /var/www/html/
