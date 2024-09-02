@@ -8,7 +8,7 @@ RUN apt update
 RUN apt install apache2 unzip -y
 RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
-COPY endgame-master.zip /var/www/html/endgame-master.zip
+COPY todo.zip /var/www/html/endgame-master.zip
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
