@@ -6,4 +6,4 @@ RUN apt install apache2 -y
 RUN apt install nodejs -y
 RUN apt install npm -y
 RUN rm index.html /var/www/html/index.html
-W
+WORKDIR /var/www/h
