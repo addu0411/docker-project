@@ -3,4 +3,4 @@ LABEL tag="puppy"
 RUN apt update -y
 RUN apt upgrade -y
 RUN apt install apache2 -y
-RUN apt install 
+RUN apt install sudo apt install nodejs
