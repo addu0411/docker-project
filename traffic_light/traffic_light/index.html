@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Light</title>
+    <style>
+        /* Basic styles for centering and background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Traffic light container styling */
+        .traffic-light {
+            width: 120px;
+            height: 360px;
+            background: #222;
+            border-radius: 15px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Common styles for each light */
+        .light {
+            width: 100px;
+            height: 100px;
+            background: #333;
+            border-radius: 50%;
+            margin: 15px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            position: relative;
+            opacity: 0.3; /* Default to off */
+        }
+
+        /* Specific colors for each light */
+        .red { background: red; }
+        .yellow { background: yellow; }
+        .green { background: green; }
+
+        /* Animation for cycling through lights */
+        @keyframes cycleLights {
+            0% { opacity: 0.3; }
+            16% { opacity: 1; }
+            33% { opacity: 0.3; }
+            50% { opacity: 0.3; }
+            66% { opacity: 1; }
+            83% { opacity: 0.3; }
+            100% { opacity: 0.3; }
+        }
+
+        /* Applying animation to each light */
+        .red {
+            animation: cycleLights 9s infinite;
+            animation-delay: 0s;
+        }
+
+        .yellow {
+            animation: cycleLights 9s infinite;
+            animation-delay: 3s;
+        }
+
+        .green {
+            animation: cycleLights 9s infinite;
+            animation-delay: 6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+</body>
+</html>
