@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginxapp
+  name: apache2app
   labels:
-      app: nginxapp
+      app: apache2app
 spec:
     containers:
-        - name: nginxcont
+        - name: apache2cont
           image: addu0411/adnan:adn
           resources:
               requests:

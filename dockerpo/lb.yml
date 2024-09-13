@@ -4,7 +4,7 @@ metadata:
       name: loadbalancer
 spec:
     selector:
-        app:  nginxapp
+        app:  apache2app
     type: LoadBalancer
     ports:
       - port: 80
