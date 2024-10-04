@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'addu0411/jenkins:ad'
+        DOCKER_IMAGE = 'addu0411/self_project:akk'
         CONTAINER_NAME = 'container-1'
     }
 
